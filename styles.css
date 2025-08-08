@@ -75,6 +75,7 @@ table {
 
 }
 
+/* ---------- MOBILE SCREEN STYLES ---------- */
 /* Hide skip link */
 #skip{
     position: absolute;
@@ -640,7 +641,9 @@ footer a{
     color: var(--black);
     margin-bottom: 1rem;
 }
+/* ---------- END MOBILE SCREEN STYLES ---------- */
 
+/* ---------- MEDIUM SCREEN STYLES ---------- */
 @media screen and (min-width: 768px) {
     header{
         display: grid;
@@ -856,8 +859,10 @@ footer a{
         font-size: 1.1rem;
 
      }
+     /* --------------- END MEDIUM SCREEN SIZES --------------- */
   }
 
+/* ---------- LARGE SCREEN STYLES ---------- */
   @media screen and (min-width: 1920px) {
     header{
         grid-template-columns: 330px auto auto;
@@ -1093,6 +1098,6 @@ footer a{
             grid-template-columns: 1188px  274px 230px;
             padding-top: 1rem;
         }
-
+/* --------------- END LARGE SCREEN SIZES --------------- */
   }
   
