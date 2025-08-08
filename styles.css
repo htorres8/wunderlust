@@ -112,7 +112,7 @@ table {
   body{
     line-height: 1.3;
     overflow-x: hidden;
-}
+ }
 
   header{
     background: linear-gradient(var(--teal), var(--white));
@@ -143,7 +143,6 @@ header a img{
 nav{
     grid-column: 2/3;
     grid-row: 1/2;
-    /* min-width: auto; */
 }
 
 h1{
@@ -182,7 +181,7 @@ header p{
   #menu-toggle a:hover {
     color: var(--white);
   }
-  /* The "hamburger" button hidden inside an input element */
+  /* The menu button hidden inside an input element */
 #menu-toggle input {
     display: block;
     width: 100px;
@@ -193,7 +192,7 @@ header p{
     padding: 0;
     cursor: pointer;   
     opacity: 0; /*hide this*/ 
-     z-index: 2; /*and place it over the hamburger   */
+     z-index: 2; /*and place it over the menu   */
  }
   
   #menu-toggle label {
@@ -203,7 +202,6 @@ header p{
     height: 3.5rem;
     background-color: var(--yellow);
     text-transform: uppercase;
-    /* top: 1.5rem; */
     margin-top: 16%;
     font-size: 1.2rem;
     padding: 1rem;
@@ -230,8 +228,6 @@ header p{
    #menu-toggle ul{
     position: absolute;
     width: 100%;
-    /* margin: -102px 0 0 -50px; */
-    /* padding: 50px; */
     padding-top: 0;
     list-style-type: none;
     /* Hide the menu off-screen to the left */
@@ -527,12 +523,8 @@ fieldset label{
 /* ---------------style radio button------------- */
 
 input[type="radio"] {
-    /* Add if not using autoprefixer */
-    -webkit-appearance: none;
     appearance: none;
-    /* For iOS < 15 to remove gradient background */
     background-color: #fff;
-    /* Not removed via appearance */
     margin: 0;
     font: inherit;
     color: var(--purple);
@@ -583,8 +575,6 @@ select {
 
 .custom-select{
     width: 100%;
-    /* min-width: 15ch;
-    max-width: 30ch; */
     border: 4px solid var(--purple);
     padding: 0em 0.5em;
     font-size: 1.25rem;
@@ -652,21 +642,15 @@ footer a{
 }
 
 @media screen and (min-width: 768px) {
-    /* body {
-      background-color: lightgray;
-    } */
-
     header{
         display: grid;
         grid-template-columns: 30% auto;
-        /* perhaps 30% 70% */
         grid-template-rows: auto auto 5rem;  
     }
 
     header a{
         grid-column: 1/2;
         grid-row: 1/3;
-        /* width: 90%; */
         align-self: center;
         justify-self: end;
         margin-bottom: 0;
@@ -875,10 +859,6 @@ footer a{
   }
 
   @media screen and (min-width: 1920px) {
-    /* body{
-        background-color: #F6D64A;
-    } */
-
     header{
         grid-template-columns: 330px auto auto;
         grid-template-rows: auto auto;
@@ -1081,6 +1061,7 @@ footer a{
 
         #contact h3{
             margin-top: 7.5rem;
+            max-width: 107rem;
         }
 
         form{
@@ -1112,9 +1093,6 @@ footer a{
             grid-template-columns: 1188px  274px 230px;
             padding-top: 1rem;
         }
-
-
-
 
   }
   
